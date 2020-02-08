@@ -8,10 +8,15 @@ body{
   background-color: #5f3c79;
 
 }
+:target{
+  padding-top:60px;
+  margin-top:-60px;
+}
 a i{
   color: #13031f;
   text-decoration: none;
   font-size: 24px;
+  overflow: hidden;
 }
 a:hover{
   text-decoration: none;
@@ -20,6 +25,30 @@ a:hover{
 div{
   overflow: hidden;
 }
+
+ /* Counter */
+ #counter{
+  margin-bottom: 50px;
+}
+#counter .row > div{
+  font-weight: 800;
+  color: #E0E0E0;
+  padding: 5%;
+  border-top: 1px solid #E0E0E0;
+  border-bottom:  1px solid #E0E0E0;
+  text-align: center;
+}
+
+#counter .row > div:not(:last-child){
+  border-right: 1px solid #E0E0E0;
+}
+#counter .row > div >p:first-child{
+  font-size: 20px;
+  font-weight: 600;
+  color: #FF0266;
+  margin-bottom: 0px !important;
+}
+/* End of counter */
 .parallax,.parallax2,.parallax3,.parallax3-2,.parallax3-2,.parallax4,.parallax5 {
     z-index: 1;
     margin-bottom: 100px;
@@ -128,9 +157,10 @@ table{
   border-radius: 50px;
   font-size: 18px;
 }
-
-#myBtn:hover {
+#myBtn{
   transition: 0.2s ease-in-out;
+}
+#myBtn:hover {
   background-color: #321533;
 }
 .navbar{
@@ -144,10 +174,9 @@ table{
 }
 .navbar a:hover{
 	color: #a27bc9 !important;
-    transition: all 0.2s;
-
 }
 .navbar a{	
+  transition: ease-in-out 0.2s;
 	margin-right: 125px;
 	width: 105px;
 }
@@ -157,9 +186,56 @@ footer{
   margin-top: 180px;
 }
 footer img{
-  width: 10%;
+  width: 50%;
+}
+footer li, footer a{
+  transition: 0.2s ease-in-out;
+  color: #BEBABA;
+}
+footer li:hover ,footer a:hover{
+  color: rgb(108, 14, 131);
+  
+}
+footer li{
+  list-style: none;
+}
+.icons i{
+  text-align: center;
+  vertical-align: center;
+  width: 30px;
+  font-size: 16px;
+  color: #FFFFFF;
+  transition: 0.5s ease-in-out;
+  background-color: #321533;
+  border: 2px solid #321533;
+  border-radius: 4px;
+  margin-top: 10px;
 }
 
+footer .icons i:hover{
+  background-color: #e095e0;
+  color: rgb(241, 221, 229);
+  
+}
+footer .copyright{
+  color: #BEBABA;
+  margin-top: 10%;
+}
+footer > .container{
+  padding-bottom: 15px !important;
+}
+
+@media screen and (min-width:1337px){
+  .parallax3, .parallax3-2{
+      height: 1400px;
+  }
+  .parallax3{
+    margin-top: 200px;
+  }
+  .parallax3-2{
+    margin-top: 280px;
+  }
+}
 @media screen and (max-width: 991px){
 	.navbar a{
 		margin-right: 0px;
@@ -174,10 +250,40 @@ footer img{
     height: 2500px;
   }
   .parallax2{
-    height: 1500px;
+    height: 2000px;
   }
   .parallax3-2{
     margin-top: 500px;
     height: 2000px;
+  }
+}
+@media screen and (max-width:767px){
+  
+  #counter{
+    margin-top:200px;
+  }
+  #counter .row > div:nth-child(2){
+    border-right: 0px;
+}
+}
+@media screen and (max-width:575px){
+  #counter .row > div{
+    border-right: 0px !important;
+}
+  .parallax3{
+    height: 100%;
+    margin-top: 65%;
+  }
+  .parallax3-2{
+    height: 100%;
+    margin-top: 100%;
+  }
+  footer{
+    text-align: center;
+}
+}
+@media screen and (max-width:420px){
+  .parallax3{
+    margin-top: 70%;
   }
 }

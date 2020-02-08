@@ -21,7 +21,7 @@
 	<body>
 
 		<nav class="navbar navbar-expand-lg navbar-light bg-light text-white container-fluid">
-			<img class="navbar-brand" src="images/icons/logo.png" width="50">
+			<a href="index.html"><img class="navbar-brand" src="images/icons/logo.png" width="50"></a> 
 			<button class="navbar-toggler" type="button" 
 					data-toggle="collapse" data-target="#navbarSupportedContent"
 					aria-controls="navbarSupportedContent" aria-expanded="false" 
@@ -42,10 +42,10 @@
 		  </div>
 	  </nav>
 
-	  <div class="parallax2 container col-10">￼￼
-		<div class="row col-10 mx-auto mt-5 tablesheet">
+	  <div id="albums" class="parallax2 container col-10">￼￼
+		<div class="row col-10 mx-auto mt-5 tablesheet text-center">
 			<h2 class="col-12 text-center">Here are some things about me:</h2>
-			<table class="col-9 table" border="1">
+			<table class="col-9 table"  border="1">
 				<tr>
 					<th>Name</th>
 					<td>Ylli</td>
@@ -59,7 +59,7 @@
 					<td>18</td>
 				</tr>
 			</table>
-			<div class="col-md-3">
+			<div class="col-md-3 text-center">
 				<img src="images/others/hackerman.gif" class="hackerman img-fluid img-thumbnail">
 			</div>
 			
@@ -87,8 +87,29 @@
 				</div>
 			</div>
 		</div>
+		
 	</div>
-	<div class="mx-auto text-center">
+	<section id="counter">
+		<div class="row mx-1">
+			<div class="col-md-3 col-sm-6">
+				<p id="count1"></p>
+				<p>Age</p>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<p id="count2"></p>
+				<p>Days Old</p>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<p id="count3"></p>
+				<p>Weeks Old</p>
+			</div>
+			<div class="col-md-3 col-sm-6">
+				<p id="count4"></p>
+				<p>Months Old</p>
+			</div>
+		</div>
+	</section>
+	<div id="college" class="mx-auto text-center">
 		<p>I was born and raised in Stanovc and graduated elementary and middle school there, and I also still live there,
 		<p>I graduated high school in Vushtrri, in the Gymnasium Eqrem Çabej</p>
 		<p>I'm currently a first-year student in Universum College</p>
@@ -100,7 +121,7 @@
 		During elementary and middle school, I always changed my mind about what I wanna be when I grow up,a physican, a doctor, a veterinarian, a paleontologist ,etc.
 		When I got into high school , I didn't know what to do ,people told me about Computer Science and such and I began to take interest in it.
 		</p>
-		<h3 class="text-center">Programming Languages:</h3>
+		<h3 id="Programming" class="text-center">Programming Languages:</h3>
 		<div class="container row mx-auto mt-2">
 			<img class="img-fluid col-6" src="images/others/python.png" alt="">
 			<img class="img-fluid col-6" src="images/others/dom.png" alt="">
@@ -111,23 +132,49 @@
 		
 
 
-	<footer class="text-center">
-		<div class="container">
-			<div class="row text-center mx-auto">
-				<div class="col-lg-4 col-sm-12 p-2 text-light">
-					<img class="navbar-brand img-fluid" src="images/icons/logo.png">
+	<footer>
+		<div class="container py-5">
+			<div class="row">
+				<div class="col-md-3 text-center col-sm-6">
+					<img src="images/icons/logo.png" alt="" class="img-fluid">
+					<p class="mt-4">&reg;Ylli Caka</p>
 				</div>
-				<div class="col-lg-4 col-sm-12 p-2 text-light">
-					<p>21.01.2020</p>
+				<div class="col-md-3 col-sm-6">
+					<div>
+						<h6>DIFFERENT STUFF</h6>
+						<li class="mb-1"><a href="assignments.html#accordionExample">Chapters</a></li>
+						<li class="mb-1"><a href="about.html#Programming">Programming Languages</a></li>
+						<li class="mb-1"><a href="about.html#college">College</a></li>
+						<li class="mb-1"><a href="https://github.com/Yllcaka" target="_blank">GitHub</a></li>
+					</div>
 				</div>
-				<div class="col-lg-4 col-sm-12 p-2 text-light">
-					<p>&reg;Ylli Caka</p>
+				<div class="col-md-3 col-sm-6">
+					<div>
+						<h6>ABOUT ME</h6>
+						<li class="mb-1"><a href="contact.html">Contact Me</a></li>
+						<li class="mb-1"><a href="favorites.html#albums">Favorite Albums</a></li>
+						<li class="mb-1"><a href="favorites.html#movies">Favorite Movies</a></li>
+						<li class="mb-1"><a href="assignments.html">All Assignments</a></li>
+					</div>
 				</div>
-
+				<div class="col-md-3 col-sm-6">
+					<div>
+						<h6>ADDRESS</h6>
+						<li class="mb-1">Stanovc i Eperm</li>
+						<li class="mb-1">Rr. Halit Cakaj</li>
+						<li class="mb-1">House Number 14</li>
+						<div class="icons">
+							<a href="https://www.facebook.com/" target="_blank"><i
+									class="fab fa-facebook-f p-1"></i></a>
+							<a href="https://www.youtube.com/channel/UChTlQ4e2UkdtVDV0CeSardw?fbclid=IwAR1P1vyg_BiIkGFN2oD9bywKmV604yodM3gKcT7mi_1dyAOCJDnA7pBZ51Q" target="_blank"><i class="fab fa-youtube p-1"></i></a>
+							<a href="https://twitter.com/yllcaka" target="_blank"><i class="fab fa-twitter p-1"></i></a>
+							<a href="https://github.com/Yllcaka" target="_blank"><i class="fab fa-github p-1"></i></a>
+						</div>
+					</div>
+				</div>
 			</div>
+			<p class="text-center copyright">08.02.2020</p>
 		</div>
-		
-		
 	</footer>
 	    <!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -142,5 +189,8 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
 		crossorigin="anonymous"></script>
+		<script src="jquery.waypoints.min.js"></script>
+    	<script src="waypoints.min.js"></script>
+		<script src="aboutus.js"></script>
 	</body>
 </html>
