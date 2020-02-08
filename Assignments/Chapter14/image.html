@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Images</title>
+        <script>
+            var image = new Image();
+            image.src = "yellowflowers.png";
+
+            function draw()
+            {
+                var canvas = document.getElementById("my image");
+                var context = canvas.getContext("2d")
+                context.drawImage(image, 0, 0, 175, 175);
+            }
+
+            window.addEventListener( "load", draw, false);
+        </script>
+    </head>
+    <body>
+        <canvas id="myimage" width="200" height="200" 
+            style="border: 1px solid black;">
+        </canvas>
+    </body>
+</html>

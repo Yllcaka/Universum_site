@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Random Dice Images</title>
+        <style type="text/css">
+        li { display: inline; margin-right: 10px; }
+        ul { margin: 0; }
+        </style>
+        <script>
+            // variables used to interact with the i mg elements
+            var die1Image;
+            var die2Image;
+            var die3Image;
+            var die4Image;
+
+            // register button listener and get the img elements 
+            function start()
+            {
+                var button = documet.getElementyById("rollButton");
+                button.addEventListener("click", rollDice, false );
+                var die1Image = document.getElementById( "die1" );
+                var die2Image = document.getElementById( "die2" );
+                var die3Image = document.getElementById( "die3" );
+                var die4Image = document.getElementById( "die4" );
+            } // end function rollDice
+
+            // roll the dice
+            function rollDice()
+            {
+                setImage( die1Image );
+                setImage( die2Image );
+                setImage( die3Image );
+                setImage( die4Image );
+            } // end function rollDice
+
+            // set image source for a die
+            function setImage ( die1Img )
+            {
+                var dieValue = Math.floor( 1 + Math.random() * 6 );
+                dieImg.setAttribute( "src", "die" + dieValue + ".png" );
+                dieImg.setAttribute( "alt",
+                    "die image with " + dieValue + "spot(s)" );
+            } // end function setImage
+
+            window.addEventListener( "load", start, false );
+        </script>
+    </head>
+    <body>
+        <body>
+            <form action="#">
+                <input id="rollButton" type="button" value="Roll Dice">
+            </form>
+            <ol>
+                <li><img id="die1" src = "blank.png" alt = "die 1 image" style="width: 10%;"></li>
+                <li><img id="die2" src = "blank.png" alt = "die 2 image" style="width: 10%;"></li>
+                <li><img id="die3" src = "blank.png" alt = "die 3 image" style="width: 10%;"></li>
+                <li><img id="die4" src = "blank.png" alt = "die 4 image" style="width: 10%;"></li>
+            </ol>
+        </body>
+    </body>
+</html>

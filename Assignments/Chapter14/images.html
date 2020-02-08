@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Compositing</title>
+    </head>
+    <body>
+        <canvas id="composite" width="220" height="200">
+        </canvas>
+        <script>
+            function draw()
+            {
+                var canvas = document.getElementById("composite");
+                var context = canvas.getContext("2d")
+                context.fillStyle = "red";
+                context.fillRect(5, 50, 210, 100);
+
+                context.globalCompositeOperation = "source-atop";
+                context.fillStyle = "lime";
+                context.fillRect(10, 20, 60, 60);
+
+                context.globalCompositeOperation = "source-over";
+                context.fillStyle = "lime";
+                context.fillRect(10, 120, 60, 60);
+
+                context.globalCompositeOperation = "destination-over";
+                context.fillStyle = "lime";
+                context.fillRect(80, 20, 60, 60);
+
+                context.globalCompositeOperation = "destination-out";
+                context.fillStyle = "lime";
+                context.fillRect(80, 120, 60, 60);
+
+                context.globalCompositeOperation = "lighter";
+                context.fillStyle = "lime";
+                context.fillRect(150, 20, 60, 60);
+
+                context.globalCompositeOperation = "xor";
+                context.fillStyle = "lime";
+                context.fillRect(150, 120, 60, 60);
+            }
+
+            window.addEventListener( "load", draw, false );
+        </script>
+    </body>
+</html>

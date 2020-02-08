@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Reflection</title>
+		<style type="text/css">
+			img { margin: 10px; }
+			img.below
+			{
+				-webkit-box-reflect: below 5px
+					-webkit-gradient(
+						linear, left top, left bottom,
+						form(transparent), to(white));
+			}
+			img.right
+			{
+				-webkit-box-reflect: right 5px
+					-webkit-gradient(
+						linear, right top, left top,
+						form(transparent), to(white));
+			}
+		</style>
+	</head>
+	<body>
+		<img class="below" src="jhtp.jpg" width="138" height="180" alt="Java How to Program book cover">
+		<img class="right" src="jhtp.jpg" width="138" height="180" alt="Java How to Program book cover">
+	</body>
+</html>

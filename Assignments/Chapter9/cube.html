@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Scoping</title>
+        <script>
+            var x;
+
+            function output()
+            {
+                for ( x = 1; x <= 10; x++ )
+                    document.writeln("<p>" + cube( x ) + "</p>" );
+            } // end function output
+
+            function cube( y )
+            {
+                return y * y * y;
+            } // end function cube
+
+            window.addEventListener("load", output, false );
+        </script>
+    </head><body></body>
+</html>

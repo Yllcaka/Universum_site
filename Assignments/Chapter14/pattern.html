@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Patterns</title>
+        <script>
+            var image = new Image();
+            image.src = "yellowflowers.png";
+
+            function start()
+            {
+                var canvas = document.getElementById("pattern");
+                var context = canvas.getContext("2d");
+                var pattern = context.createPattern(image, "repeat");
+                context.rect(5, 5, 385, 200);
+                context.fillStyle = pattern;
+                context.fill();
+            }    
+
+            window.addEventListener( "load", start, false );
+        </script>
+    </head>
+    <body>
+        <canvas id="pattern" width="400" height="200" 
+            style="border: 1px solid black;">
+        </canvas>
+    </body>
+</html>
